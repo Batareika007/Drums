@@ -17,31 +17,36 @@ footer {
 }
 
 .w {
-
+  background-image: url(images/tom1.png);
 }
 
 .a {
-
+  background-image: url(images/tom2.png);
 }
 
 .s {
-
+  background-image: url(images/tom3.png);
 }
 
 .d {
-
+  background-image: url(images/tom4.png);
 }
 
 .j {
-
+  background-image: url(images/snare.png);
 }
 
 .k {
-
+  background-image: url(images/crash.png);
 }
 
 .l {
+  background-image: url(images/kick.png);
 
+}
+
+.drum:active {
+  opacity: 50%;
 }
 
 .set {
@@ -62,6 +67,7 @@ footer {
   color: red;
 }
 
+
 .drum {
   outline: none;
   border: 10px solid #404B69;
@@ -78,4 +84,10 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.whiteColor {
+  color: white;
+  text-shadow: 3px 0 #DA0463;
+  ;
 }
