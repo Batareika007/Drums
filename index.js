@@ -3,7 +3,7 @@ let btns = document.querySelectorAll('button');
 for (i of btns) {
   i.addEventListener('click', function () {
     let buttonKey = this.innerHTML;
-    console.log(buttonKey);
+    // console.log(buttonKey);
     this.classList.toggle("whiteColor");
     // let soundLetter = this.textContent;
 
@@ -39,18 +39,21 @@ for (i of btns) {
         break;
 
       case "l":
-        let kickBassSound = new Audio("sounds/kick-bass");
+        let kickBassSound = new Audio("sounds/kick-bass.mp3");
         kickBassSound.play();
         break;
       default:
+        console.log(buttonKey);
     }
 
-
-
+    
     // console.log(soundLetter);
   });
 }
 
+document.addEventListener("keydown", function(event){
+  console.log(event.key);
+})
 
 // tom1Sound.play();
 // document.getElementById("crashSound").play();
